@@ -3,17 +3,17 @@
 # Формула: T(f) = T(c) * 9/5 + 32
 
 loop do
-  puts "Введите данные"
+  p "Введите данные"
   answer = gets.chomp
 
   if answer.count("a-яA-Яa-zA-Z@#$%^&*()_+{}[]:;'?><.,") > 0
-    puts "Неверные данные! Попробуйте еще раз!"
+    p "Неверные данные! Попробуйте еще раз!"
   else
     fahrenheit = answer.to_i * 9/5 + 32
 
-    puts "#{fahrenheit} по Фаренгейту"
+    p "#{fahrenheit} по Фаренгейту"
 
-    puts 'Повторить запрос? ( да / нет )'
+    p 'Повторить запрос? ( да / нет )'
 
     input = gets.chomp
 

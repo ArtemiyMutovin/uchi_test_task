@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 loop do
-  puts "Какой свет загорелся на светофоре?"
+  p "Какой свет загорелся на светофоре?"
   color = gets.chomp
 
   if color == 'red'
@@ -13,4 +13,10 @@ loop do
   else
     p 'Нет такого света светофора'
   end
+
+  p 'Повторить запрос? ( да / нет )'
+
+  input = gets.chomp
+
+  break if input == 'нет'
 end
