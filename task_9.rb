@@ -24,7 +24,7 @@
 
 # Запрос в консоли: Student.joins(:parent).where(parent: {name: "Марина"}).count
 
-# Запрос в базу данных в SQL: SELECT COUNT(*) FROM "students" INNER JOIN "parents" "parent" ON "parent"."id" = "students"."parent_id" WHERE "parent"."name" = ?  [["name", "Марина"]]
+# Запрос в базу данных в SQL: SELECT COUNT(*) FROM students INNER JOIN "parents" "parent" ON "parent"."id" = "students"."parent_id" WHERE "parent"."name" = 'Марина'
 
 # ========(c)========
 

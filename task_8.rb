@@ -17,7 +17,7 @@
 
 # Запрос в консоли: Students.where(name: 'Иван')
 
-# Запрос в базу данных в SQL: SELECT "students".* FROM "students" WHERE "students"."name" = $1  [["name", "Иван"]]
+# Запрос в базу данных в SQL: SELECT * FROM students WHERE students.name = 'Иван'
 
 # ======(с)======
 
