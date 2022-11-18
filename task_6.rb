@@ -6,7 +6,7 @@ loop do
   p "Введите данные"
   answer = gets.chomp
 
-  if answer.count("a-яA-Яa-zA-Z@#$%^&*()_+{}[]:;'?><.,") > 0
+  if answer.count("0-9").zero?
     p "Неверные данные! Попробуйте еще раз!"
   else
     fahrenheit = answer.to_i * 9/5 + 32
