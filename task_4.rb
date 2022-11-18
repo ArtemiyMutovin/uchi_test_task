@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-EXAMPLE3 = [nil, 1, :foo]
-
-def remove_nil
-  EXAMPLE3.compact
+def remove_nil(array)
+  array.compact
 end

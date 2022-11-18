@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
-EXAMPLE2 = [{ a: 1, b: 2, c: 45 }, { d: 123, c: 12 }, { e: 87 }].freeze
-
 # ======(a)======
 
-def keys_array
+def keys_array(arr)
   new_array = []
 
-  EXAMPLE2.each do |hash|
+  arr.each do |hash|
     new_array << hash.keys
   end
   new_array.flatten
@@ -15,10 +13,10 @@ end
 
 # ======(b)======
 
-def values_array
+def values_array(array)
   new_array = []
 
-  EXAMPLE2.each do |hash|
+  array.each do |hash|
     new_array << hash.values
   end
   new_array.flatten
@@ -26,10 +24,10 @@ end
 
 # ======(c)======
 
-def values_sum_array
+def values_sum_array(array)
   new_array = []
 
-  EXAMPLE2.each do |hash|
+  array.each do |hash|
     new_array << hash.values
   end
   new_array.flatten.sum

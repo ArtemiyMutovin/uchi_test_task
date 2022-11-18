@@ -1,12 +1,10 @@
 # frozen_string_literal: true
 
-EXAMPLE4 = [nil, 2, :foo, 'bar', 'foo', 'apple', 'orange', :orange, 45,  nil, :foo, :bar, 25, 45, :apple, 'bar', nil]
-
-def elements_count_hash
+def elements_count_hash(array)
   hash = {}
 
-  EXAMPLE4.each do |e|
-    hash[e] = EXAMPLE4.count(e)
+  array.each do |e|
+    hash[e] = array.count(e)
   end
   hash
 end
