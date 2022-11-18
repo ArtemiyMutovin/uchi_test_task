@@ -1,17 +1,19 @@
 # frozen_string_literal: true
 
+TRAFFIC_LIGHTS_ACTIONS = {
+  'red' => 'Стойте!',
+  'yellow' => 'Ждите!',
+  'green' => 'Идите!'
+}
+
 loop do
   p "Какой свет загорелся на светофоре?"
   color = gets.chomp
 
-  if color == 'red'
-    p 'Стойте!'
-  elsif color == 'yellow'
-    p 'Ждите!'
-  elsif color == 'green'
-    p 'Идите!'
+  if TRAFFIC_LIGHTS_ACTIONS[color].nil?
+    "Данные не найдены"
   else
-    p 'Нет такого света светофора'
+    p TRAFFIC_LIGHTS_ACTIONS[color]
   end
 
   p 'Повторить запрос? ( да / нет )'
